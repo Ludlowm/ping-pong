@@ -1,39 +1,32 @@
+var numberArray = [];
 
+//Business Logic
+var pingPong = function(numbers) {
+  for (var i = 1; i <= numbers; i++) {
+    result = i;
+    if ((result % 3) === 0 && (result % 5) === 0) {
+      result = "ping-pong";
+    } else if ((result % 5) === 0) {
+      result = "pong";
+    } else if ((result % 3) === 0) {
+      result = "ping";
+    }
+    numberArray.push(result);
+  }
+}
 //Front End Logic
 $(document).ready(function() {
-
   $("#mainform").submit(function(event){
     event.preventDefault();
-
-
-    var numberArray = [];
-    var userInput = parseInt($("#input1").val());
-    var total = 1;
-
-    var tmpNum = "";
-    for (i = 1; i <= userInput; i++) {
-      tmpNum+= i + "<br>";
-    }
-    //show form
-    $(".word-output").show();
-
-    // clear output fields
-    $("#yourStartnum").text("");
-
+    // clear output fields in div
+    $("#word-output").text("");
+    //send input to variable
+    var numbers = $("#mainform input").val();
+    pingPong(numbers);
     // output starting and calculated values
-    $("#yourStartnum").append(tmpNum);
-
+    numberArray.forEach(function(numbers) {
+      $("#word-output").append("<li>" + result + "</li>");
+    });
+    numberArray = [];
   });
 });
-
-
-
-// //Business Logic
-// var pingPong = function(userInput) {
-//   for (i = 1; i <= userInput; i++) {
-//     if (userInput % 3 === 0) {
-//       wholestring.replace("ping");
-//
-//     }
-//   }
-// }
