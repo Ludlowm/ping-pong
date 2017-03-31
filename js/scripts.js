@@ -23,9 +23,10 @@ $(document).ready(function() {
     //send input to variable
     var numbers = $("#mainform input").val();
     pingPong(numbers);
+    alert(result);
     // output starting and calculated values
-    numberArray.forEach(function(numbers) {
-      $("#word-output").append("<li>" + result + "</li>");
+    numberArray.forEach(function(result) {
+      $("#word-output").append(result + "</br>");
     });
     numberArray = [];
   });
