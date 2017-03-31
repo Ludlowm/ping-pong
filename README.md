@@ -1,12 +1,12 @@
 # _Ping-Pong}_
 
-#### _{This program replaces any word divisible by 3,5 or 15 and replaces the number}, {3/31/17}_
+#### _{This program replaces any number divisible by 3,5 or 15 and replaces the number}, {3/31/17}_
 
 #### By _**{Marko Ludlow}**_
 
 ## Description
 
-_{This program replaces any word divisible by 3,5 or 15 and replaces the number}_
+_{This program counts from the number inputted to 0 and replaces any number divisible by 3,5 or 15 and replaces the number}_
 
 ## Specs
 
