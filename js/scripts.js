@@ -19,11 +19,10 @@ $(document).ready(function() {
   $("#mainform").submit(function(event){
     event.preventDefault();
     // clear output fields in div
-    $("#word-output").text("");
+    $("#word-output").show("");
     //send input to variable
     var numbers = $("#mainform input").val();
     pingPong(numbers);
-    alert(result);
     // output starting and calculated values
     numberArray.forEach(function(result) {
       $("#word-output").append(result + "</br>");
