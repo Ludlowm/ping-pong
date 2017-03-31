@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _Ping-Pong}_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _{This program replaces any word divisible by 3,5 or 15 and replaces the number}, {3/31/17}_
 
-#### By _**{List of contributors}**_
+#### By _**{Marko Ludlow}**_
 
 ## Description
 
